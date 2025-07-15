@@ -9,6 +9,21 @@ export default function VinCheckPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
+  // interface ResultType {
+  //   data: {
+  //     vehicle_name: string,
+  //     vehicle_age: string,
+  //     vehicle_made_in: string
+  //   }, 
+  //   vehicle_warranty: [
+  //     {
+  //       type: string,
+  //       warranty: string,
+  //       estimated_remainings: string
+  //     }
+  //   ]
+  // }
+
   const handleCheck = async () => {
     setLoading(true);
     setError('');

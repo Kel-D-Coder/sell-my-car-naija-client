@@ -19,7 +19,7 @@ function PlateNumberCheck() {
         vehicle_number: plateNumber,
       },
       {
-          headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json' },
       });
 
       const data = await res.data;
