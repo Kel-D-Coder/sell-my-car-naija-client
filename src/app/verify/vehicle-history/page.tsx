@@ -15,7 +15,7 @@ export default function VehicleHistoryPage() {
     setResult(null);
 
     try {
-        const res = await axios.post('http://localhost:8000/api/v1/verification/vehicle-history', { vin });
+        const res = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/verification/vehicle-history`, { vin });
         
         const data = await res.data;
 
@@ -25,8 +25,8 @@ export default function VehicleHistoryPage() {
         setError(data.msg || 'Vehicle history not found.');
       }
     } catch (err: any) {
-        setError(err.response?.data?.error || 'Something went wrong');
-        console.error(err.message);
+      setError(err.response?.data?.error || 'Something went wrong');
+      console.error(err.message);
     }
 
     setLoading(false);

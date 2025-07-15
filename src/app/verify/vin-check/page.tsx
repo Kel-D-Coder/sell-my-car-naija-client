@@ -15,7 +15,7 @@ export default function VinCheckPage() {
     setResult(null);
 
     try {
-      const res = await axios.post('http://localhost:8000/api/v1/verification/verify-vin', { vin });
+      const res = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/verification/verify-vin`, { vin });
       setResult(res.data);
     } catch (err: any) {
       setError(err.response?.data?.error || 'Something went wrong');

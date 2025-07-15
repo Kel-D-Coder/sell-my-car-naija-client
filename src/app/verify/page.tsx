@@ -13,7 +13,7 @@ const packages = [
       'Vehicle color',
       'status'
     ],
-    link: '/verify/vin-check',
+    link: '/verify/plate-check',
     badge: 'FREE',
     background: 'bg-white',
     text: 'text-green-700',

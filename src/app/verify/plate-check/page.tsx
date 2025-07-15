@@ -15,7 +15,7 @@ function PlateNumberCheck() {
     setResult(null);
 
     try {
-      const res = await axios.post('http://localhost:8000/api/v1/verification/verify-plate', {
+      const res = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/verification/verify-plate`, {
         vehicle_number: plateNumber,
       },
       {
