@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -12,18 +13,18 @@ export default function Navbar() {
             <span className="text-xl font-bold text-green-700">Sellmycarnaija</span>
           </div>
           <div className="hidden md:flex space-x-8">
-            <a href="#" className="text-gray-700 hover:text-green-700 font-medium">
+            <Link href="/" className="text-gray-700 hover:text-green-700 font-medium">
               Home
-            </a>
-            <a href="#" className="text-gray-700 hover:text-green-700 font-medium">
+            </Link>
+            <Link href="/verify" className="text-gray-700 hover:text-green-700 font-medium">
               Verify
-            </a>
-            <a href="#" className="text-gray-700 hover:text-green-700 font-medium">
+            </Link>
+            <Link href="#" className="text-gray-700 hover:text-green-700 font-medium">
               About
-            </a>
-            <a href="#" className="text-gray-700 hover:text-green-700 font-medium">
+            </Link>
+            <Link href="#" className="text-gray-700 hover:text-green-700 font-medium">
               Contact
-            </a>
+            </Link>
           </div>
           <div className="md:hidden flex items-center">
             <button
@@ -62,18 +63,18 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden absolute left-0 top-16 w-full z-50 bg-white shadow-lg">
           <div className="px-2 pt-2 pb-3 text-center space-y-1">
-            <a href="#" className="block px-3 py-2 rounded text-gray-700 hover:bg-green-100">
+            <Link href="/" className="block px-3 py-2 rounded text-gray-700 hover:bg-green-100">
               Home
-            </a>
-            <a href="#" className="block px-3 py-2 rounded text-gray-700 hover:bg-green-100">
+            </Link>
+            <Link href="/verify" className="block px-3 py-2 rounded text-gray-700 hover:bg-green-100">
               Verify
-            </a>
-            <a href="#" className="block px-3 py-2 rounded text-gray-700 hover:bg-green-100">
+            </Link>
+            <Link href="/about" className="block px-3 py-2 rounded text-gray-700 hover:bg-green-100">
               About
-            </a>
-            <a href="#" className="block px-3 py-2 rounded text-gray-700 hover:bg-green-100">
+            </Link>
+            <Link href="/contact" className="block px-3 py-2 rounded text-gray-700 hover:bg-green-100">
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       )}
