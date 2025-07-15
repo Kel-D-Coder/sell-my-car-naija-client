@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import backgroundImage from '../../public/images/WhatsApp Image 2025-07-05 at 16.02.35_a08b0542.jpg'
 
 export default function Home() {
   return (
