@@ -23,10 +23,14 @@ const packages = [
     title: 'Basic Check (VIN)',
     price: 'Free',
     features: [
-      'Interior Dimensions',
-      'Capacities',
-      'Fuel details',
-      "Vehicle warranty"
+      'Vehicle Make, Model & Year',
+      ' Engine Type & Transmission',
+      'Trim Level & Body Style',
+      "Country of Origin",
+      "VIN Validation (Check if it’s correct or fake)",
+      'Manufacturer Info',
+      'Fuel Type & Drive Type',
+      'Basic Specs (e.g. doors, engine size, etc.)'
     ],
     link: '/verify/vin-check',
     badge: 'FREE',
@@ -38,10 +42,16 @@ const packages = [
     title: 'Premium VIN Check',
     price: '₦1000/report',
     features: [
-      'Vehicle History',
-      'Police & Insurance Records',
-      'Mileage & Accident Report',
-      'Stolen Record'
+      "Real Auction Photos (See the car's true past condition)",
+      'Accident & Damage Records',
+      'Mileage History & Odometer Tampering Check',
+      'Service & Maintenance Logs',
+      'Theft/Stolen Status',
+      'Flood, Fire, and Salvage Damage',
+      'Airbag Deployment & Recall Data',
+      'Previous Ownership Info',
+      'Country of Origin & Import Records',
+      'Complete Vehicle Specs & Build Sheet'
     ],
     link: '/verify/vehicle-history',
     badge: 'RECOMMENDED',
@@ -56,6 +66,7 @@ const packages = [
       'Market Value',
       'Basic',
       'Condition',
+      'Real market price'
     ],
     link: '/verify/market-value',
     badge: 'NEW',

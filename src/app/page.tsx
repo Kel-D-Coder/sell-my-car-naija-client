@@ -32,12 +32,11 @@ export default function Home() {
         <div className="mt-12 bg-white/90 rounded-lg shadow-lg p-6 max-w-xl mx-auto text-gray-800">
           <div className="grid grid-cols-2 gap-4 text-left">
             {[
-              'Accident history and damages',
-              'Specifications',
-              'Mileage data',
-              'Registration history',
-              'Service history, repairs',
-              'Photos',
+              'Basic VIN Check – Get key vehicle details in seconds',
+              'Premium VIN Check – Full history + accident records + auction photos',
+              'Motorcycle VIN Decode – Instantly verify motorcycle details',
+              'Plate Number Check – Retrieve info using just the registration plate',
+              'Market Value Check – Know the real price before you buy or sel',
             ].map((item, index) => (
               <div key={index} className="flex items-center space-x-2">
                 <span className="text-green-600 text-lg">✔</span>
