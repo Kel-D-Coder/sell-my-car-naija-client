@@ -60,12 +60,15 @@ const packages = [
     icon: 'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5a/15/26/5a152660-c88b-f767-ec81-c001daeeb34a/AppIcon-0-0-1x_U007epad-0-1-85-220.png/256x256bb.jpg',
   },
   {
-    title: 'Market Valuation',
+    title: 'Real market price',
     price: '₦500/report',
     features: [
       'Market Value',
       'Basic',
       'Condition',
+      "Trade in",
+      "Dealer retail",
+      "Private party price",
       'Real market price',
     ],
     link: '/verify/market-value',

@@ -9,30 +9,34 @@ export default function Home() {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-50 z-0" />
+      <div className="absolute inset-0 bg-black opacity-60 z-0" />
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-4xl text-center py-16 sm:py-20 px-4">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">
+      <div className="relative z-10 w-full max-w-4xl text-center px-4 pt-12 pb-16 sm:pt-20 sm:pb-24 md:pt-28">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6 md:mb-8 md:-mt-10">
           Before you buy it, verify it. <br />
           Real Vehicles. <br />
           Total Trust.
         </h1>
 
-        <p className="text-base sm:text-lg md:text-xl mb-8 max-w-md mx-auto">
+        <p className="text-base sm:text-lg md:text-xl mb-8 max-w-md mx-auto text-white/80">
           Sell My Car Naija — Nigeria’s First Peer-to-Peer Vehicle Platform with Built-In Verification
         </p>
 
         <Link
           href="/verify"
-          className="inline-block bg-white text-green-800 font-semibold px-6 py-3 rounded-md hover:bg-green-100 transition"
+          className="inline-block bg-green-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-green-700 transition"
         >
           Start Verification
         </Link>
 
-        {/* New Feature List */}
-        <div className="mt-10 bg-white/90 rounded-lg shadow-lg p-6 max-w-xl mx-auto text-gray-800">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+        {/* Our Services Section */}
+        <div className="mt-12 max-w-2xl mx-auto">
+          <h2 className="text-xl font-bold text-green-300 uppercase tracking-wide mb-6 text-center">
+            Our Services
+          </h2>
+
+          <div className="space-y-4">
             {[
               'Basic VIN Check – Get key vehicle details in seconds',
               'Premium VIN Check – Full history + accident records + auction photos',
@@ -40,11 +44,15 @@ export default function Home() {
               'Plate Number Check – Retrieve info using just the registration plate',
               'Market Value Check – Know the real price before you buy or sell',
             ].map((item, index) => (
-              <div key={index} className="flex items-start space-x-2">
-                <span className="text-green-600 text-lg mt-1">✔</span>
-                <span className="text-sm">{item}</span>
+              <div key={index} className="flex items-start gap-3">
+                <span className="text-green-400 text-xl">✔</span>
+                <span className="text-sm text-white/90">{item}</span>
               </div>
             ))}
+          </div>
+
+          <div className="mt-8 border-t border-white/20 pt-4 text-sm text-white/50 text-center">
+            Built for Nigerians — Fast, Reliable, and Trusted.
           </div>
         </div>
       </div>

@@ -46,7 +46,7 @@ export default function AboutPage() {
         <section className="space-y-4">
           <p className="font-medium text-lg text-green-700">📩 Let’s Get You Rolling</p>
           <p>Need to list your car? Want to verify before you buy?</p>
-          <p>📲 <strong>WhatsApp us:</strong> <a href="https://wa.me/2347084542979" className="text-green-700 underline">+234 708 454 2979</a></p>
+          <p>📲 <strong>WhatsApp us:</strong> <a href="https://wa.me/2347085452979" className="text-green-700 underline">+234 7085452979</a></p>
           <p>📍 <strong>Follow us on Instagram & Facebook:</strong> <a href="https://instagram.com/SellMyCarNaija" target="_blank" className="text-green-700 underline">@SellMyCarNaija</a></p>
         </section>
 
