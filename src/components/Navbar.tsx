@@ -19,7 +19,7 @@ export default function Navbar() {
             <Link href="/verify" className="text-gray-700 hover:text-green-700 font-medium">
               Verify
             </Link>
-            <Link href="#" className="text-gray-700 hover:text-green-700 font-medium">
+            <Link href="/about" className="text-gray-700 hover:text-green-700 font-medium">
               About
             </Link>
             <Link href="#" className="text-gray-700 hover:text-green-700 font-medium">

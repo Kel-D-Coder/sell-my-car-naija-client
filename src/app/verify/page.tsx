@@ -41,6 +41,7 @@ const packages = [
       'Vehicle History',
       'Police & Insurance Records',
       'Mileage & Accident Report',
+      'Stolen Record'
     ],
     link: '/verify/vehicle-history',
     badge: 'RECOMMENDED',
@@ -48,19 +49,33 @@ const packages = [
     text: 'text-blue-800',
     icon: 'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5a/15/26/5a152660-c88b-f767-ec81-c001daeeb34a/AppIcon-0-0-1x_U007epad-0-1-85-220.png/256x256bb.jpg',
   },
+  {
+    title: 'Market Valuation',
+    price: '₦500/report',
+    features: [
+      'Market Value',
+      'Basic',
+      'Condition',
+    ],
+    link: '/verify/market-value',
+    badge: 'NEW',
+    background: 'bg-gray-50',
+    text: 'text-gray-800',
+    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLxsAzGOZQO2zt3QOikxoGX2BGZBqz42SNBQ&s', // You can replace with actual valuation icon
+  },
   // {
-  //   title: 'Market Valuation',
+  //   title: 'Motorcycle check',
   //   price: '₦500/report',
   //   features: [
-  //     'Current Market Value',
-  //     'Depreciation Estimate',
-  //     'Resale Value Insights',
+  //     'Price',
+  //     'Year of manufacture',
+  //     'Dimensions',
   //   ],
-  //   link: '/verify/market-value',
+  //   link: '/verify/motorcycle-check',
   //   badge: 'NEW',
   //   background: 'bg-gray-50',
   //   text: 'text-gray-800',
-  //   icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLxsAzGOZQO2zt3QOikxoGX2BGZBqz42SNBQ&s', // You can replace with actual valuation icon
+  //   icon: 'https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/8e/ca/e9/8ecae980-3eff-46ae-9ff2-beb28c1583b4/source/256x256bb.jpg', // You can replace with actual valuation icon
   // },
 ];
 
