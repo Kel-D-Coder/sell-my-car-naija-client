@@ -1,13 +1,21 @@
 import Link from 'next/link';
+import { FaCar, FaMotorcycle, FaCheckCircle, FaMoneyBillWave, FaClipboardList } from 'react-icons/fa';
 
 export default function Home() {
+  const services = [
+    { icon: <FaCar className="text-green-400 w-5 h-5" />, text: 'Basic VIN Check – Get key vehicle details in seconds' },
+    { icon: <FaClipboardList className="text-green-400 w-5 h-5" />, text: 'Premium VIN Check – Full history + accident records + auction photos' },
+    { icon: <FaMotorcycle className="text-green-400 w-5 h-5" />, text: 'Motorcycle VIN Decode – Instantly verify motorcycle details' },
+    { icon: <FaCheckCircle className="text-green-400 w-5 h-5" />, text: 'Plate Number Check – Retrieve info using just the registration plate' },
+    { icon: <FaMoneyBillWave className="text-green-400 w-5 h-5" />, text: 'Market Value Check – Know the true value before you pay, avoid overpaying' },
+  ];
+
   return (
     <main
       className="relative min-h-screen bg-cover bg-center sm:bg-cover bg-no-repeat text-white flex flex-col items-center justify-center px-4 sm:px-6"
       style={{
         backgroundImage: `url('./images/WhatsApp Image 2025-07-05 at 16.02.35_a08b0542.jpg')`,
         backgroundSize: '100% 100%',
-        // backgroundPosition: 'center',
       }}
     >
       {/* Overlay */}
@@ -21,7 +29,7 @@ export default function Home() {
           Total Trust.
         </h1>
 
-        <p className="text-base sm:text-lg md:text-xl mb-8 max-w-md mx-auto text-white/80">
+        <p className="text-base sm:text-lg md:text-xl mb-8 max-w-md mx-auto text-white/80 font-semibold">
           Nigeria’s First Peer-to-Peer Vehicle Platform — Verified & Trusted by Car Buyers.
         </p>
 
@@ -38,19 +46,14 @@ export default function Home() {
             Why Choose Us?
           </h2>
 
-          <div className="space-y-6">
-            {[
-              '✔ Know the Real Identity of Any Vehicle Instantly — Basic VIN Check.',
-              '✔ Get Full Vehicle History Reports — Accidents, Auctions, and More.',
-              '✔ Instantly Verify Bikes and Motorcycles Too.',
-              '✔ Find Out Who Really Owns That Car — Plate Number Look-Up.',
-              '✔ Know the True Market Value Before You Pay — Avoid Overpaying.',
-            ].map((item, index) => (
+          <div className="space-y-4">
+            {services.map((item, index) => (
               <div
                 key={index}
-                className="bg-white/10 rounded-md p-4 border border-white/20 hover:border-green-400 transition text-sm sm:text-base"
+                className="flex items-start gap-3 bg-white/10 rounded-md p-4 border border-white/20 hover:border-green-400 transition text-sm font-semibold sm:text-base"
               >
-                {item}
+                {item.icon}
+                <span>{item.text}</span>
               </div>
             ))}
           </div>
