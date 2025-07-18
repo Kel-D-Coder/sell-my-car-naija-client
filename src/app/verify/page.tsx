@@ -75,7 +75,7 @@ const packages = [
     badge: 'NEW',
     background: 'bg-gray-50',
     text: 'text-gray-800',
-    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLxsAzGOZQO2zt3QOikxoGX2BGZBqz42SNBQ&s',
+    icon: 'https://t4.ftcdn.net/jpg/01/29/40/83/360_F_129408389_XnhdlJNowRogIcPUtDjs99E5wznr5WqT.jpg',
   },
 ];
 

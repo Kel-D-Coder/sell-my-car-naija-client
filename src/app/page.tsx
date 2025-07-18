@@ -3,13 +3,15 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main
-      className="relative min-h-screen bg-cover bg-center text-white flex flex-col items-center justify-center px-4 sm:px-6"
+      className="relative min-h-screen bg-cover bg-center sm:bg-cover bg-no-repeat text-white flex flex-col items-center justify-center px-4 sm:px-6"
       style={{
         backgroundImage: `url('./images/WhatsApp Image 2025-07-05 at 16.02.35_a08b0542.jpg')`,
+        backgroundSize: '100% 100%',
+        // backgroundPosition: 'center',
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-60 z-0" />
+      <div className="absolute inset-0 bg-black opacity-30 z-0" />
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-4xl text-center px-4 pt-12 pb-16 sm:pt-20 sm:pb-24 md:pt-28">
@@ -20,7 +22,7 @@ export default function Home() {
         </h1>
 
         <p className="text-base sm:text-lg md:text-xl mb-8 max-w-md mx-auto text-white/80">
-          Sell My Car Naija — Nigeria’s First Peer-to-Peer Vehicle Platform with Built-In Verification
+          Nigeria’s First Peer-to-Peer Vehicle Platform — Verified & Trusted by Car Buyers.
         </p>
 
         <Link
@@ -30,29 +32,31 @@ export default function Home() {
           Start Verification
         </Link>
 
-        {/* Our Services Section */}
+        {/* Services / Benefits */}
         <div className="mt-12 max-w-2xl mx-auto">
-          <h2 className="text-xl font-bold text-green-300 uppercase tracking-wide mb-6 text-center">
-            Our Services
+          <h2 className="text-lg font-semibold text-green-400 uppercase tracking-wide mb-4 text-center">
+            Why Choose Us?
           </h2>
 
-          <div className="space-y-4">
+          <div className="space-y-6">
             {[
-              'Basic VIN Check – Get key vehicle details in seconds',
-              'Premium VIN Check – Full history + accident records + auction photos',
-              'Motorcycle VIN Decode – Instantly verify motorcycle details',
-              'Plate Number Check – Retrieve info using just the registration plate',
-              'Market Value Check – Know the real price before you buy or sell',
+              '✔ Know the Real Identity of Any Vehicle Instantly — Basic VIN Check.',
+              '✔ Get Full Vehicle History Reports — Accidents, Auctions, and More.',
+              '✔ Instantly Verify Bikes and Motorcycles Too.',
+              '✔ Find Out Who Really Owns That Car — Plate Number Look-Up.',
+              '✔ Know the True Market Value Before You Pay — Avoid Overpaying.',
             ].map((item, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <span className="text-green-400 text-xl">✔</span>
-                <span className="text-sm text-white/90">{item}</span>
+              <div
+                key={index}
+                className="bg-white/10 rounded-md p-4 border border-white/20 hover:border-green-400 transition text-sm sm:text-base"
+              >
+                {item}
               </div>
             ))}
           </div>
 
-          <div className="mt-8 border-t border-white/20 pt-4 text-sm text-white/50 text-center">
-            Built for Nigerians — Fast, Reliable, and Trusted.
+          <div className="mt-8 border-t border-white/20 pt-4 text-xs text-white/60 text-center">
+            100% Nigerian. Built for Buyers & Sellers Nationwide.
           </div>
         </div>
       </div>

@@ -1,9 +1,11 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+
+  const handleLinkClick = () => setOpen(false);
 
   return (
     <nav className="w-full bg-white shadow-md">
@@ -59,20 +61,21 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden absolute left-0 top-16 w-full z-50 bg-white shadow-lg">
           <div className="px-2 pt-2 pb-3 text-center space-y-1">
-            <Link href="/" className="block px-3 py-2 rounded text-gray-700 hover:bg-green-100">
+            <Link href="/" onClick={handleLinkClick} className="block px-3 py-2 rounded text-gray-700 hover:bg-green-100">
               Home
             </Link>
-            <Link href="/verify" className="block px-3 py-2 rounded text-gray-700 hover:bg-green-100">
+            <Link href="/verify" onClick={handleLinkClick} className="block px-3 py-2 rounded text-gray-700 hover:bg-green-100">
               Verify
             </Link>
-            <Link href="/about" className="block px-3 py-2 rounded text-gray-700 hover:bg-green-100">
+            <Link href="/about" onClick={handleLinkClick} className="block px-3 py-2 rounded text-gray-700 hover:bg-green-100">
               About
             </Link>
-            <Link href="/contact" className="block px-3 py-2 rounded text-gray-700 hover:bg-green-100">
+            <Link href="/contact" onClick={handleLinkClick} className="block px-3 py-2 rounded text-gray-700 hover:bg-green-100">
               Contact
             </Link>
           </div>
