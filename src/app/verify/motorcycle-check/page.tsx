@@ -70,18 +70,27 @@ export default function MotorcycleVinCheckPage() {
             <p><strong>Model:</strong> {result.data.model || 'N/A'}</p>
             <p><strong>Trim:</strong> {result.data.trim || 'N/A'}</p>
             <p><strong>Category:</strong> {result.data.vehicle?.category || 'N/A'}</p>
-            <p><strong>Price (USD):</strong> {result.data.price?.base_msrp ? `$${result.data.price.base_msrp}` : 'N/A'}</p>
+            <p><strong>Base Price (USD):</strong> {result.data.price?.base_msrp ? `$${result.data.price.base_msrp}` : 'N/A'}</p>
 
-            <div className="mt-4">
-              <strong>Dimensions:</strong>
-              <ul className="list-disc pl-5 mt-2">
-                {result.data.dimensions?.map((dim: any, i: number) => (
-                  <li key={i}>
-                    <strong>{dim.name}:</strong> {dim.measurements?.[0]?.value} {dim.measurements?.[0]?.unit}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {result.data.dimensions && (
+              <div className="mt-4">
+                <strong>Dimensions:</strong>
+                <ul className="list-disc pl-5 mt-2 space-y-1">
+                  {result.data.dimensions.map((section: any, index: number) => (
+                    <li key={index}>
+                      <span className="font-semibold">{section.section}</span>
+                      <ul className="pl-4 list-disc">
+                        {section.measurements.map((measure: any, i: number) => (
+                          <li key={i}>
+                            {measure.name}: {measure.values?.[0]?.value} {measure.values?.[0]?.unit}
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         )}
       </div>
