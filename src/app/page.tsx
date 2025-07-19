@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaCar, FaMotorcycle, FaCheckCircle, FaMoneyBillWave, FaClipboardList } from 'react-icons/fa';
+import { FaCar, FaMotorcycle, FaCheckCircle, FaMoneyBillWave, FaClipboardList, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 export default function Home() {
   const services = [
@@ -45,6 +45,16 @@ export default function Home() {
           <h2 className="text-lg font-semibold text-green-400 uppercase tracking-wide mb-4 text-center">
             Why Choose Us?
           </h2>
+
+          {/* Social Icons */}
+          <div className="flex justify-center items-center space-x-4 mb-6">
+            <a href="https://instagram.com/SellMyCarNaija" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="w-6 h-6 text-pink-400 hover:text-pink-500 transition" />
+            </a>
+            <a href="https://www.facebook.com/share/1RuWduw1h8/" target="_blank" rel="noopener noreferrer">
+              <FaFacebook className="w-6 h-6 text-blue-500 hover:text-blue-600 transition" />
+            </a>
+          </div>
 
           <div className="space-y-4">
             {services.map((item, index) => (

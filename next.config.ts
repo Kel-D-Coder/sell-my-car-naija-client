@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
       new URL('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLxsAzGOZQO2zt3QOikxoGX2BGZBqz42SNBQ&s'),
       new URL('https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/8e/ca/e9/8ecae980-3eff-46ae-9ff2-beb28c1583b4/source/256x256bb.jpg'),
       new URL('https://t4.ftcdn.net/jpg/01/29/40/83/360_F_129408389_XnhdlJNowRogIcPUtDjs99E5wznr5WqT.jpg'),
+      new URL('https://fullcarchecks.co.uk/images/Car-Checklist.svg?v=1.0.2'),
     ],
   },
 };
