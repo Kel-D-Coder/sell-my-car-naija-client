@@ -11,6 +11,7 @@ export default function Home() {
   ];
 
   return (
+    <>
     <main
       className="relative min-h-screen bg-cover bg-center sm:bg-cover bg-no-repeat text-white flex flex-col items-center justify-center px-4 sm:px-6"
       style={{
@@ -73,6 +74,38 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </main>
+      </main>
+
+    {/* Trusted By Section */}
+<div className="mt-16 px-4">
+  <h3 className="text-center font-semibold mb-6 text-sm uppercase tracking-wide text-gray-600">
+    Trusted By
+  </h3>
+
+  <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAA_hN6kbhHOiXn1w_ktHmQB8hyFRK9r-FCA&s"
+      alt="Ministry of Communication"
+      className="h-12 md:h-20 object-contain opacity-90"
+    />
+    <img
+      src="https://legitcar.ng/assets/img/news/ministry-of-communication-technology.png"
+      alt="Nigeria Sovereign Investment Authority"
+      className="h-12 md:h-20 object-contain opacity-90"
+    />
+    <img
+      src="https://crossriverwatch.com/wp-content/uploads/2021/08/3CFD8DC3-3789-46A3-87B4-C29E9FC141DC.jpeg"
+      alt="HiiL"
+      className="h-12 md:h-20 object-contain opacity-90"
+    />
+    <img
+      src="https://pbs.twimg.com/media/GLsa19PXMAE_7_F.jpg"
+      alt="Tony Elumelu Foundation"
+      className="h-12 md:h-20 object-contain opacity-90"
+    />
+  </div>
+</div>
+
+    </>
   );
 }
