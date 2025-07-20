@@ -1,18 +1,67 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
-    <footer className="w-full bg-white  mt-8">
-      <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between">
-        <span className="text-gray-600 text-sm">
-          &copy; {new Date().getFullYear()} Sellmycarnaija. All rights reserved.
-        </span>
-        <div className="flex space-x-4 mt-2 md:mt-0">
-          <a href="#" className="text-gray-600 hover:text-green-700 text-sm">
-            Privacy Policy
-          </a>
-          <a href="#" className="text-gray-600 hover:text-green-700 text-sm">
-            Terms of Service
-          </a>
+    <footer className="w-full bg-[#03293F] text-white pt-10 pb-6 mt-12">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+        {/* Brand Section */}
+        <div>
+          <h2 className="font-bold text-lg mb-2">Sell My Car Naija</h2>
+          <p className="text-sm text-gray-300">
+            Nigeria&apos;s #1 Peer-to-Peer Vehicle Platform. Helping real car owners connect with real buyers.
+          </p>
         </div>
+
+        {/* Quick Links */}
+        <div>
+          <h3 className="font-semibold text-[#33BBC8] mb-3">Quick Links</h3>
+          <ul className="space-y-2 text-sm">
+            <li><Link href="/" className="hover:text-[#33BBC8]">Home</Link></li>
+            <li><Link href="/verify" className="hover:text-[#33BBC8]">Verify</Link></li>
+            <li><Link href="/about" className="hover:text-[#33BBC8]">About</Link></li>
+            <li><Link href="/contact" className="hover:text-[#33BBC8]">Contact</Link></li>
+          </ul>
+        </div>
+
+        {/* Support */}
+        {/* <div>
+          <h3 className="font-semibold text-[#33BBC8] mb-3">Support</h3>
+          <ul className="space-y-2 text-sm">
+            <li><Link href="/track-order" className="hover:text-[#33BBC8]">Track Order</Link></li>
+            <li><Link href="/privacy-policy" className="hover:text-[#33BBC8]">Privacy Policy</Link></li>
+            <li><Link href="/terms-of-use" className="hover:text-[#33BBC8]">Terms of Use</Link></li>
+            <li><Link href="/return-policy" className="hover:text-[#33BBC8]">Return Policy</Link></li>
+            <li><Link href="/newsletter-signup" className="hover:text-[#33BBC8] font-semibold">Newsletter Signup</Link></li>
+          </ul>
+        </div> */}
+
+        {/* Connect */}
+        <div>
+          <h3 className="font-semibold text-[#33BBC8] mb-3">Connect</h3>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <a href="https://instagram.com/SellMyCarNaija" target="_blank" rel="noopener noreferrer" className="hover:text-[#33BBC8]">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/2347084542979" target="_blank" rel="noopener noreferrer" className="hover:text-[#33BBC8]">
+                WhatsApp
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@sellmycarnaija.com" className="hover:text-[#33BBC8]">
+                Email Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="mt-10 border-t border-[#1F4A61] py-4 bg-[#59C4D4] text-center text-sm font-medium text-[#03293F]">
+        &copy; {new Date().getFullYear()} Sell My Car Naija. All rights reserved. | Built for Nigerians, by Nigerians 🇳🇬
       </div>
     </footer>
   );

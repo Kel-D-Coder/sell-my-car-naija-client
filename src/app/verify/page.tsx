@@ -118,7 +118,7 @@ export default function VerifyPage() {
           <div
             key={index}
             onClick={() => router.push(pkg.link)}
-            className={`${pkg.background} rounded-lg shadow-md p-5 sm:p-6 cursor-pointer hover:shadow-lg transition duration-300 flex flex-col justify-between`}
+            className={`${pkg.background} rounded-lg shadow-md p-5 sm:p-6 cursor-pointer hover:shadow-lg transition duration-300 flex flex-col justify-between capitalize`}
           >
             <div>
               <div className="flex items-center justify-between mb-4">

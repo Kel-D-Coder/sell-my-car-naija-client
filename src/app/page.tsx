@@ -3,7 +3,7 @@ import { FaCar, FaMotorcycle, FaCheckCircle, FaMoneyBillWave, FaClipboardList, F
 
 export default function Home() {
   const services = [
-    { icon: <FaCar className="text-green-400 w-5 h-5" />, text: 'Covers all vehicles – Cars, motorcycles, tricycles & more' },
+    { icon: <FaCar className="text-green-400 w-5 h-5" />, text: 'Basic VIN Check – Cars, motorcycles, tricycles & more' },
     { icon: <FaClipboardList className="text-green-400 w-5 h-5" />, text: 'Premium VIN Check – Full history + accident records + auction photos' },
     { icon: <FaMotorcycle className="text-green-400 w-5 h-5" />, text: 'Motorcycle VIN Decode – Instantly verify motorcycle details' },
     { icon: <FaCheckCircle className="text-green-400 w-5 h-5" />, text: 'Plate Number Check – Retrieve info using just the registration plate' },
@@ -15,7 +15,7 @@ export default function Home() {
     <main
       className="relative min-h-screen bg-cover bg-center sm:bg-cover bg-no-repeat text-white flex flex-col items-center justify-center px-4 sm:px-6"
       style={{
-        backgroundImage: `url('./images/WhatsApp Image 2025-07-20 at 15.28.06_5244dcd6.jpg')`,
+        backgroundImage: `url('./images/WhatsApp Image 2025-07-20 at 19.37.39_2e1b6b05.jpg')`,
         backgroundSize: '100% 100%',
       }}
     >
