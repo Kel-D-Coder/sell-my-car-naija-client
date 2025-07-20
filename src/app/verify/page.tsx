@@ -78,7 +78,7 @@ const packages = [
     icon: 'https://t4.ftcdn.net/jpg/01/29/40/83/360_F_129408389_XnhdlJNowRogIcPUtDjs99E5wznr5WqT.jpg',
   },
   {
-    title: 'Motorcycle check',
+    title: 'Motorcycle VIN check',
     price: '₦500/report',
     features: [
       'Status',

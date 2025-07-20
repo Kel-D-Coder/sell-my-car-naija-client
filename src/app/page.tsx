@@ -15,7 +15,7 @@ export default function Home() {
     <main
       className="relative min-h-screen bg-cover bg-center sm:bg-cover bg-no-repeat text-white flex flex-col items-center justify-center px-4 sm:px-6"
       style={{
-        backgroundImage: `url('./images/WhatsApp Image 2025-07-05 at 16.02.35_a08b0542.jpg')`,
+        backgroundImage: `url('./images/WhatsApp Image 2025-07-20 at 15.28.06_5244dcd6.jpg')`,
         backgroundSize: '100% 100%',
       }}
     >
