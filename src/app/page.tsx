@@ -44,18 +44,8 @@ export default function Home() {
         {/* Services / Benefits */}
         <div className="mt-12 max-w-2xl mx-auto">
           <h2 className="text-lg font-semibold text-green-400 uppercase tracking-wide mb-4 text-center">
-            Why Choose Us?
+            What makes us different
           </h2>
-
-          {/* Social Icons */}
-          <div className="flex justify-center items-center space-x-4 mb-6">
-            <a href="https://instagram.com/SellMyCarNaija" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="w-6 h-6 text-pink-400 hover:text-pink-500 transition" />
-            </a>
-            <a href="https://www.facebook.com/share/1RuWduw1h8/" target="_blank" rel="noopener noreferrer">
-              <FaFacebook className="w-6 h-6 text-blue-500 hover:text-blue-600 transition" />
-            </a>
-          </div>
 
           <div className="space-y-4">
             {services.map((item, index) => (
@@ -67,6 +57,16 @@ export default function Home() {
                 <span>{item.text}</span>
               </div>
             ))}
+            </div>
+            
+            {/* Social Icons */}
+          <div className="flex justify-center items-center space-x-4 mt-6">
+            <a href="https://instagram.com/SellMyCarNaija" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="w-6 h-6 text-pink-400 hover:text-pink-500 transition" />
+            </a>
+            <a href="https://www.facebook.com/share/1RuWduw1h8/" target="_blank" rel="noopener noreferrer">
+              <FaFacebook className="w-6 h-6 text-blue-500 hover:text-blue-600 transition" />
+            </a>
           </div>
 
           <div className="mt-8 border-t border-white/20 pt-4 text-xs text-white/60 text-center">
