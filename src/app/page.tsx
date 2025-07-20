@@ -44,7 +44,7 @@ export default function Home() {
           {/* What Makes Us Different Section */}
 <div className="mt-16 bg-white text-gray-800 rounded-lg shadow-md px-6 py-8 max-w-2xl mx-auto text-center">
   <h2 className="text-xl sm:text-2xl font-bold text-green-700 mb-4">
-    "What Makes Us Different"
+    &quot;What Makes Us Different&quot;
   </h2>
   <p className="text-sm sm:text-base font-medium leading-relaxed text-gray-600">
     At <span className="font-semibold">Sell My Car Naija Verify</span>, we give you peace of mind before you buy.
