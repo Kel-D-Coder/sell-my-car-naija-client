@@ -57,7 +57,7 @@ const packages = [
     badge: 'RECOMMENDED',
     background: 'bg-blue-50',
     text: 'text-blue-800',
-    icon: 'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5a/15/26/5a152660-c88b-f767-ec81-c001daeeb34a/AppIcon-0-0-1x_U007epad-0-1-85-220.png/256x256bb.jpg',
+    icon: 'https://www.autodna.com/assets/images/example-reports/report-list-icons/vehicle-technical-information.svg?c=1723539665',
   },
   {
     title: 'Real market price check',

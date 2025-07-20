@@ -3,7 +3,7 @@ import { FaCar, FaMotorcycle, FaCheckCircle, FaMoneyBillWave, FaClipboardList, F
 
 export default function Home() {
   const services = [
-    { icon: <FaCar className="text-green-400 w-5 h-5" />, text: 'Basic VIN Check – Get key vehicle details in seconds' },
+    { icon: <FaCar className="text-green-400 w-5 h-5" />, text: 'Covers all vehicles – Cars, motorcycles, tricycles & more' },
     { icon: <FaClipboardList className="text-green-400 w-5 h-5" />, text: 'Premium VIN Check – Full history + accident records + auction photos' },
     { icon: <FaMotorcycle className="text-green-400 w-5 h-5" />, text: 'Motorcycle VIN Decode – Instantly verify motorcycle details' },
     { icon: <FaCheckCircle className="text-green-400 w-5 h-5" />, text: 'Plate Number Check – Retrieve info using just the registration plate' },
@@ -41,10 +41,30 @@ export default function Home() {
           Start Verification
         </Link>
 
+          {/* What Makes Us Different Section */}
+<div className="mt-16 bg-white text-gray-800 rounded-lg shadow-md px-6 py-8 max-w-2xl mx-auto text-center">
+  <h2 className="text-xl sm:text-2xl font-bold text-green-700 mb-4">
+    "What Makes Us Different"
+  </h2>
+  <p className="text-sm sm:text-base font-medium leading-relaxed text-gray-600">
+    At <span className="font-semibold">Sell My Car Naija Verify</span>, we give you peace of mind before you buy.
+  </p>
+
+  <div className="text-left mt-6 space-y-3 text-gray-700 text-sm sm:text-base font-medium">
+    <p> <span className='rounded-full border text-center px-0.5 pb-0.5'>✔️</span> <span className="font-semibold">Covers all vehicles</span> – Cars, motorcycles, tricycles & more</p>
+    <p> <span className='rounded-full border text-center px-0.5 pb-0.5'>✔️</span> <span className="font-semibold">Premium VIN check</span> – Includes photos, full history & stolen report</p>
+    <p> <span className='rounded-full border text-center px-0.5 pb-0.5'>✔️</span> Plate number, chassis, and ownership verification</p>
+    <p> <span className='rounded-full border text-center px-0.5 pb-0.5'>✔️</span> Fast, simple & secure results</p>
+  </div>
+
+  <p className="mt-6 text-green-600 font-semibold">Verify first. Buy with confidence.</p>
+</div>
+
+
         {/* Services / Benefits */}
         <div className="mt-12 max-w-2xl mx-auto">
-          <h2 className="text-lg font-semibold text-green-400 uppercase tracking-wide mb-4 text-center">
-            What makes us different
+          <h2 className="text-lg font-bold text-green-400 uppercase tracking-wide mb-4 text-center">
+           ✅ Vehicle Check Services
           </h2>
 
           <div className="space-y-4">
