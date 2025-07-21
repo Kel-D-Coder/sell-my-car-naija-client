@@ -17,7 +17,7 @@ export default function Navbar() {
             <span className="text-xl font-bold text-green-700">Sellmycarnaija</span>
           </div>
           <div className="hidden md:flex space-x-8">
-            {["Home", "Verify", "About", "Contact"].map((label) => (
+            {["Home", "Verify", "About", "Contact", "Blog"].map((label) => (
               <Link
                 key={label}
                 href={`/${label.toLowerCase() === "home" ? "" : label.toLowerCase()}`}

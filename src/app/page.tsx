@@ -3,7 +3,7 @@ import { FaCar, FaMotorcycle, FaCheckCircle, FaMoneyBillWave, FaClipboardList, F
 
 export default function Home() {
   const services = [
-    { icon: <FaCar className="text-green-400 w-5 h-5" />, text: 'Basic VIN Check – Cars, motorcycles, tricycles & more' },
+    { icon: <FaCar className="text-green-400 w-5 h-5" />, text: 'Basic VIN Check – Get key vehicle details in seconds' },
     { icon: <FaClipboardList className="text-green-400 w-5 h-5" />, text: 'Premium VIN Check – Full history + accident records + auction photos' },
     { icon: <FaMotorcycle className="text-green-400 w-5 h-5" />, text: 'Motorcycle VIN Decode – Instantly verify motorcycle details' },
     { icon: <FaCheckCircle className="text-green-400 w-5 h-5" />, text: 'Plate Number Check – Retrieve info using just the registration plate' },
@@ -61,40 +61,40 @@ export default function Home() {
 </div>
 
 
-        {/* Services / Benefits */}
-        <div className="mt-12 max-w-2xl mx-auto">
-          <h2 className="text-lg font-bold text-green-400 uppercase tracking-wide mb-4 text-center">
-           ✅ Vehicle Check Services
-          </h2>
+    {/* Services / Benefits */}
+    <div className="mt-12 max-w-2xl mx-auto">
+      <h2 className="text-lg font-bold text-green-400 uppercase tracking-wide mb-4 text-center">
+        Vehicle Check Services
+      </h2>
 
-          <div className="space-y-4">
-            {services.map((item, index) => (
-              <div
-                key={index}
-                className="flex items-start gap-3 bg-white/10 rounded-md p-4 border border-white/20 hover:border-green-400 transition text-sm font-semibold sm:text-base"
-              >
-                {item.icon}
-                <span>{item.text}</span>
-              </div>
-            ))}
-            </div>
+      <div className="space-y-4">
+        {services.map((item, index) => (
+          <div
+            key={index}
+            className="flex items-start gap-3 bg-white/10 rounded-md p-4 border border-white/20 hover:border-green-400 transition text-sm font-semibold sm:text-base"
+          >
+            {item.icon}
+            <span>{item.text}</span>
+          </div>
+        ))}
+    </div>
             
-            {/* Social Icons */}
-          <div className="flex justify-center items-center space-x-4 mt-6">
-            <a href="https://instagram.com/SellMyCarNaija" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="w-6 h-6 text-pink-400 hover:text-pink-500 transition" />
-            </a>
-            <a href="https://www.facebook.com/share/1RuWduw1h8/" target="_blank" rel="noopener noreferrer">
-              <FaFacebook className="w-6 h-6 text-blue-500 hover:text-blue-600 transition" />
-            </a>
-          </div>
+    {/* Social Icons */}
+    <div className="flex justify-center items-center space-x-4 mt-6">
+      <a href="https://instagram.com/SellMyCarNaija" target="_blank" rel="noopener noreferrer">
+        <FaInstagram className="w-6 h-6 text-pink-400 hover:text-pink-500 transition" />
+      </a>
+      <a href="https://www.facebook.com/share/1RuWduw1h8/" target="_blank" rel="noopener noreferrer">
+        <FaFacebook className="w-6 h-6 text-blue-500 hover:text-blue-600 transition" />
+      </a>
+    </div>
 
-          <div className="mt-8 border-t border-white/20 pt-4 text-xs text-white/60 text-center">
-            100% Nigerian. Built for Buyers & Sellers Nationwide.
-          </div>
-        </div>
-      </div>
-      </main>
+    <div className="mt-8 border-t border-white/20 pt-4 text-xs text-white/60 text-center">
+      100% Nigerian. Built for Buyers & Sellers Nationwide.
+    </div>
+  </div>
+</div>
+</main>
 
     {/* Trusted By Section */}
 <div className="mt-16 px-4">

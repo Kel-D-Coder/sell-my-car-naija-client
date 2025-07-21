@@ -25,16 +25,14 @@ export default function Footer() {
         </div>
 
         {/* Support */}
-        {/* <div>
+        <div>
           <h3 className="font-semibold text-[#33BBC8] mb-3">Support</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/track-order" className="hover:text-[#33BBC8]">Track Order</Link></li>
-            <li><Link href="/privacy-policy" className="hover:text-[#33BBC8]">Privacy Policy</Link></li>
-            <li><Link href="/terms-of-use" className="hover:text-[#33BBC8]">Terms of Use</Link></li>
+            <li><Link href="/privacy" className="hover:text-[#33BBC8]">Privacy Policy</Link></li>
+            <li><Link href="/terms" className="hover:text-[#33BBC8]">Terms of Use</Link></li>
             <li><Link href="/return-policy" className="hover:text-[#33BBC8]">Return Policy</Link></li>
-            <li><Link href="/newsletter-signup" className="hover:text-[#33BBC8] font-semibold">Newsletter Signup</Link></li>
           </ul>
-        </div> */}
+        </div>
 
         {/* Connect */}
         <div>
@@ -46,7 +44,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="https://wa.me/2347084542979" target="_blank" rel="noopener noreferrer" className="hover:text-[#33BBC8]">
+              <a href="https://wa.me/2347085452979" target="_blank" rel="noopener noreferrer" className="hover:text-[#33BBC8]">
                 WhatsApp
               </a>
             </li>

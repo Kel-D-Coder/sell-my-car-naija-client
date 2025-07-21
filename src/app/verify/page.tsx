@@ -151,7 +151,7 @@ export default function VerifyPage() {
               </ul>
             </div>
 
-            <button className="mt-6 w-full bg-green-700 hover:bg-green-800 text-white py-2 rounded-md font-medium">
+            <button className="mt-6 w-full bg-green-700 hover:bg-green-800 text-white capitalize py-2 rounded-md font-medium">
               Start {pkg.title}
             </button>
           </div>

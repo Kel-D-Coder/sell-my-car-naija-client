@@ -21,10 +21,10 @@ export default function ContactPage() {
             </a>
           </div>
 
-          <div className="flex items-center gap-4 bg-green-50 p-4 rounded-lg hover:bg-green-100 transition">
+          {/* <div className="flex items-center gap-4 bg-green-50 p-4 rounded-lg hover:bg-green-100 transition">
             <FaPhoneAlt className="text-green-500 w-5 h-5" />
             <span className="text-green-700 font-medium">Phone: +234 7085452979</span>
-          </div>
+          </div> */}
 
           <div className="flex items-center gap-4 bg-green-50 p-4 rounded-lg hover:bg-green-100 transition">
             <FaEnvelope className="text-green-500 w-5 h-5" />
