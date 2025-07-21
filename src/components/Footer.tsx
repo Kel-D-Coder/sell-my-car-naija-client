@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <footer className="w-full bg-[#03293F] text-white pt-10 pb-6 mt-12">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 
         {/* Brand Section */}
         <div>
@@ -14,28 +14,18 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div>
-          <h3 className="font-semibold text-[#33BBC8] mb-3">Quick Links</h3>
-          <ul className="space-y-2 text-sm">
-            <li><Link href="/" className="hover:text-[#33BBC8]">Home</Link></li>
-            <li><Link href="/verify" className="hover:text-[#33BBC8]">Verify</Link></li>
-            <li><Link href="/about" className="hover:text-[#33BBC8]">About</Link></li>
-            <li><Link href="/contact" className="hover:text-[#33BBC8]">Contact</Link></li>
-          </ul>
-        </div>
+        <div className='grid gap-8 grid-cols-2'>
+          <div>
+            <h3 className="font-semibold text-[#33BBC8] mb-3">Quick Links</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/" className="hover:text-[#33BBC8]">Home</Link></li>
+              <li><Link href="/verify" className="hover:text-[#33BBC8]">Verify</Link></li>
+              <li><Link href="/about" className="hover:text-[#33BBC8]">About</Link></li>
+              <li><Link href="/contact" className="hover:text-[#33BBC8]">Contact</Link></li>
+            </ul>
+          </div>
 
-        {/* Support */}
-        <div>
-          <h3 className="font-semibold text-[#33BBC8] mb-3">Support</h3>
-          <ul className="space-y-2 text-sm">
-            <li><Link href="/privacy" className="hover:text-[#33BBC8]">Privacy Policy</Link></li>
-            <li><Link href="/terms" className="hover:text-[#33BBC8]">Terms of Use</Link></li>
-            <li><Link href="/return-policy" className="hover:text-[#33BBC8]">Return Policy</Link></li>
-          </ul>
-        </div>
-
-        {/* Connect */}
-        <div>
+          <div>
           <h3 className="font-semibold text-[#33BBC8] mb-3">Connect</h3>
           <ul className="space-y-2 text-sm">
             <li>
@@ -55,6 +45,21 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+
+        </div>
+
+        {/* Support */}
+        <div>
+          <h3 className="font-semibold text-[#33BBC8] mb-3">Support</h3>
+          <ul className="space-y-2 text-sm">
+            <li><Link href="/privacy" className="hover:text-[#33BBC8]">Privacy Policy</Link></li>
+            <li><Link href="/terms" className="hover:text-[#33BBC8]">Terms of Use</Link></li>
+            <li><Link href="/return-policy" className="hover:text-[#33BBC8]">Return Policy</Link></li>
+          </ul>
+        </div>
+
+        {/* Connect */}
+        
       </div>
 
       {/* Bottom Bar */}
