@@ -102,7 +102,7 @@ export default function Home() {
           Trusted By
         </h3>
 
-        <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
+        <div className="flex justify-center items-center gap-12 sm:gap-10 md:gap-24 p-2">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAA_hN6kbhHOiXn1w_ktHmQB8hyFRK9r-FCA&s"
             alt="Ministry of Communication"
