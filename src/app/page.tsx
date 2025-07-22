@@ -15,7 +15,7 @@ export default function Home() {
     <main
       className="relative min-h-screen bg-cover bg-center sm:bg-cover bg-no-repeat text-white flex flex-col items-center justify-center px-4 sm:px-6"
       style={{
-        backgroundImage: `url('./images/WhatsApp Image 2025-07-20 at 19.37.39_2e1b6b05.jpg')`,
+        backgroundImage: `url('./images/new-background.jpg')`,
         backgroundSize: '100% 100%',
       }}
     >
@@ -42,7 +42,7 @@ export default function Home() {
         </Link>
 
           {/* What Makes Us Different Section */}
-<div className="mt-16 bg-white text-gray-800 rounded-lg shadow-md px-6 py-8 max-w-2xl mx-auto text-center">
+<div className="mt-16 bg-green-950 text-gray-800 rounded-lg shadow-md px-6 py-8 max-w-2xl mx-auto text-center">
   <h2 className="text-xl sm:text-2xl font-bold text-green-700 mb-4">
     &quot;What Makes Us Different&quot;
   </h2>
