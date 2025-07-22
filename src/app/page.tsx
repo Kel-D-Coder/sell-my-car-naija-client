@@ -42,7 +42,7 @@ export default function Home() {
           </Link>
 
         {/* What Makes Us Different Section */}
-        <div className="mt-16 text-gray-800 rounded-lg shadow-md px-6 py-8 max-w-2xl mx-auto text-center" style={{ backgroundColor: "#FFF5E1"}}>
+        <div className="mt-16 text-gray-800 rounded-lg shadow-md px-6 py-8 max-w-2xl mx-auto text-center" style={{ backgroundColor: "#FDFCFB"}}>
           <h2 className="text-xl sm:text-2xl font-bold text-green-700 mb-4">
             &quot;What Makes Us Different&quot;
           </h2>
@@ -97,31 +97,31 @@ export default function Home() {
     </main>
 
       {/* Trusted By Section */}
-      <div className="mt-16 px-4">
-        <h3 className="text-center font-semibold mb-6 text-sm uppercase tracking-wide text-gray-600">
+      <div className="mt-16 px-4 h-5 flex flex-col justify-center pb-3 sm:p-10">
+        <h3 className="text-center font-semibold mb-3 text-sm uppercase tracking-wide text-gray-600">
           Trusted By
         </h3>
 
-        <div className="flex justify-center items-center gap-12 sm:gap-10 md:gap-24 p-2">
+        <div className="flex justify-center items-center gap-12 sm:gap-10 md:gap-24 p-2 relative">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAA_hN6kbhHOiXn1w_ktHmQB8hyFRK9r-FCA&s"
             alt="Ministry of Communication"
-            className="h-12 md:h-20 object-contain opacity-90"
+            className="h-13 md:h-20 object-contain opacity-90"
           />
           <img
             src="https://legitcar.ng/assets/img/news/ministry-of-communication-technology.png"
             alt="Nigeria Sovereign Investment Authority"
-            className="h-12 md:h-20 object-contain opacity-90"
+            className="h-10 md:h-20 object-contain opacity-90"
           />
           <img
             src="https://crossriverwatch.com/wp-content/uploads/2021/08/3CFD8DC3-3789-46A3-87B4-C29E9FC141DC.jpeg"
             alt="HiiL"
-            className="h-12 md:h-20 object-contain opacity-90"
+            className="h-10 md:h-20 object-contain opacity-90"
           />
           <img
             src="https://pbs.twimg.com/media/GLsa19PXMAE_7_F.jpg"
             alt="Tony Elumelu Foundation"
-            className="h-12 md:h-20 object-contain opacity-90"
+            className="h-10 md:h-20 object-contain opacity-90"
           />
         </div>
       </div>
