@@ -64,7 +64,7 @@ export default function Home() {
       {/* Services / Benefits */}
       <div className="mt-12 max-w-2xl mx-auto">
         <h2 className="text-lg font-bold text-green-400 uppercase tracking-wide mb-4 text-center">
-          Vehicle Check Services
+         <span className='rounded-full border text-center px-0.5 pb-0.5'>✔️</span> Vehicle Check Services
         </h2>
 
         <div className="space-y-4">
@@ -97,7 +97,7 @@ export default function Home() {
     </main>
 
       {/* Trusted By Section */}
-      <div className="mt-16 px-4 h-5 flex flex-col justify-center pb-3 sm:p-10">
+      <div className="mt-16 px-4 h-5 flex flex-col justify-center pb-3">
         <h3 className="text-center font-semibold mb-3 text-sm uppercase tracking-wide text-gray-600">
           Trusted By
         </h3>
@@ -106,22 +106,22 @@ export default function Home() {
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAA_hN6kbhHOiXn1w_ktHmQB8hyFRK9r-FCA&s"
             alt="Ministry of Communication"
-            className="h-13 md:h-20 object-contain opacity-90"
+            className="h-13 md:h-20 sm:h-20 object-contain opacity-90"
           />
           <img
             src="https://legitcar.ng/assets/img/news/ministry-of-communication-technology.png"
             alt="Nigeria Sovereign Investment Authority"
-            className="h-10 md:h-20 object-contain opacity-90"
+            className="h-10 md:h-20 sm:h-20 object-contain opacity-90"
           />
           <img
             src="https://crossriverwatch.com/wp-content/uploads/2021/08/3CFD8DC3-3789-46A3-87B4-C29E9FC141DC.jpeg"
             alt="HiiL"
-            className="h-10 md:h-20 object-contain opacity-90"
+            className="h-10 md:h-20 sm:h-20 object-contain opacity-90"
           />
           <img
             src="https://pbs.twimg.com/media/GLsa19PXMAE_7_F.jpg"
             alt="Tony Elumelu Foundation"
-            className="h-10 md:h-20 object-contain opacity-90"
+            className="h-10 md:h-20 sm:h-20 object-contain opacity-90"
           />
         </div>
       </div>
