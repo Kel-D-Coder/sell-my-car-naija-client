@@ -64,8 +64,10 @@ export default function Home() {
 
       {/* Services / Benefits */}
       <div className="mt-12 max-w-2xl mx-auto">
-        <h2 className="text-lg font-bold text-green-400 uppercase tracking-wide mb-4 text-center flex items-center justify-center">
-          <img src={checkmark.src} alt="" className='h-7' />
+        <h2 className="text-lg font-bold text-green-400 uppercase tracking-wide mb-4 text-center flex items-center justify-center gap-1">
+            <div className='border rounded-full p-2'>
+                <img src={checkmark.src} alt="" className='h-7' />
+          </div>
           Vehicle Check Services
         </h2>
 
