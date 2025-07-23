@@ -1,6 +1,6 @@
 'use client';
 
-import { FaWhatsapp, FaEnvelope, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaEnvelope, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 export default function ContactPage() {
   return (
