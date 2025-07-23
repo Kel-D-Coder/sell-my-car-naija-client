@@ -10,7 +10,7 @@ export default function Navbar() {
   const handleLinkClick = () => setOpen(false);
 
   return (
-    <nav className="w-full bg-white shadow-md left-0 z-50">
+    <nav className="w-full bg-white shadow-md left-0 z-50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0 flex items-center">
@@ -51,16 +51,24 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu with Slide Animation */}
+      {/* Mobile Menu: Slide in from right */}
       {open && (
-        <div className="md:hidden absolute left-0 top-16 w-full bg-white shadow-lg animate__animated animate__slideInDown animate__faster">
-          <div className="px-4 pt-4 pb-6 text-center space-y-3">
+        <div className="md:hidden fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 animate__animated animate__slideInRight animate__faster">
+          <div className="flex justify-end p-4">
+            <button
+              onClick={() => setOpen(false)}
+              className="text-gray-700 hover:text-green-700 focus:outline-none"
+            >
+              ✕
+            </button>
+          </div>
+          <div className="px-6 py-4 space-y-4">
             {["Home", "Verify", "About", "Contact"].map((label) => (
               <Link
                 key={label}
                 href={`/${label.toLowerCase() === "home" ? "" : label.toLowerCase()}`}
                 onClick={handleLinkClick}
-                className="block px-4 py-2 rounded text-gray-700 font-medium hover:bg-green-100 transition"
+                className="block text-gray-700 font-medium hover:text-green-700 transition"
               >
                 {label}
               </Link>

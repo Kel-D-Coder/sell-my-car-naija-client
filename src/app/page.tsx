@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { FaCar, FaMotorcycle, FaCheckCircle, FaMoneyBillWave, FaClipboardList, FaInstagram, FaFacebook } from 'react-icons/fa';
+import checkmark from "../../assets/463030-middle-removebg-preview.png"
 
 export default function Home() {
   const services = [
@@ -43,9 +44,10 @@ export default function Home() {
 
         {/* What Makes Us Different Section */}
         <div className="mt-16 text-gray-800 rounded-lg shadow-md px-6 py-8 max-w-2xl mx-auto text-center" style={{ backgroundColor: "#FDFCFB"}}>
-          <h2 className="text-xl sm:text-2xl font-bold text-green-700 mb-4">
-            &quot;What Makes Us Different&quot;
-          </h2>
+            <h2 className="text-xl sm:text-2xl font-bold text-green-700 mb-4 flex items-center justify-center">
+              <img src={checkmark.src} alt="" className='h-7' />
+              &quot;What Makes Us Different&quot;
+            </h2>
           <p className="text-sm sm:text-base font-medium leading-relaxed text-gray-600">
             At <span className="font-semibold">Sell My Car Naija Verify</span>, we give you peace of mind before you buy.
           </p>
@@ -96,35 +98,50 @@ export default function Home() {
     </div>
     </main>
 
-      {/* Trusted By Section */}
-      <div className="mt-16 px-4 h-5 flex flex-col justify-center pb-3">
-        <h3 className="text-center font-semibold mb-3 text-sm uppercase tracking-wide text-gray-600">
-          Trusted By
-        </h3>
+     {/* Trusted By Section */}
+      <div className="mt-16 h-4 flex justify-center flex-col pb-5">
+          <h3 className="text-center font-semibold mb-4 text-sm uppercase tracking-wide text-gray-600">
+            Trusted By
+          </h3>
 
-        <div className="flex justify-center items-center gap-12 sm:gap-10 md:gap-24 p-2 relative">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAA_hN6kbhHOiXn1w_ktHmQB8hyFRK9r-FCA&s"
-            alt="Ministry of Communication"
-            className="h-13 md:h-20 sm:h-20 object-contain opacity-90"
-          />
-          <img
-            src="https://legitcar.ng/assets/img/news/ministry-of-communication-technology.png"
-            alt="Nigeria Sovereign Investment Authority"
-            className="h-10 md:h-20 sm:h-20 object-contain opacity-90"
-          />
-          <img
-            src="https://crossriverwatch.com/wp-content/uploads/2021/08/3CFD8DC3-3789-46A3-87B4-C29E9FC141DC.jpeg"
-            alt="HiiL"
-            className="h-10 md:h-20 sm:h-20 object-contain opacity-90"
-          />
-          <img
-            src="https://pbs.twimg.com/media/GLsa19PXMAE_7_F.jpg"
-            alt="Tony Elumelu Foundation"
-            className="h-10 md:h-20 sm:h-20 object-contain opacity-90"
-          />
-        </div>
+          <div className="flex  gap-6 sm:gap-10 md:gap-24 p-2 justify-center">
+            {[
+              {
+                src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAA_hN6kbhHOiXn1w_ktHmQB8hyFRK9r-FCA&s",
+                alt: "Ministry of Communication",
+              },
+              {
+                src: "https://legitcar.ng/assets/img/news/ministry-of-communication-technology.png",
+                alt: "Nigeria Sovereign Investment Authority",
+              },
+              {
+                src: "https://crossriverwatch.com/wp-content/uploads/2021/08/3CFD8DC3-3789-46A3-87B4-C29E9FC141DC.jpeg",
+                alt: "HiiL",
+              },
+              {
+                src: "https://pbs.twimg.com/media/GLsa19PXMAE_7_F.jpg",
+                alt: "Tony Elumelu Foundation",
+              },
+              {
+                src: "https://pbs.twimg.com/profile_images/638341721013682177/f3-VvbGd_400x400.jpg",
+                alt: "Tony Elumelu Foundation",
+              },
+              {
+                src: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c0/a4/5b/c0a45b06-e3fe-f8ff-afa6-158c003c6393/AppIcon-0-0-1x_U007epad-0-1-85-220.png/256x256bb.jpg",
+                alt: "iOS App Icon",
+              },
+            ].map((logo, idx) => (
+              <div key={idx} className="min-w-max flex-shrink-0">
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="h-10 sm:h-14 md:h-20 object-contain opacity-90"
+                />
+              </div>
+            ))}
+          </div>
       </div>
+
 
     </>
   );
