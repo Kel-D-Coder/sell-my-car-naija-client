@@ -10,16 +10,16 @@ export default function ContactPage() {
           Contact Us
         </h1>
         <p className="text-center text-gray-600 mb-8">
-          Need help listing your car? Have questions about vehicle verification? Reach out anytime.
+          Need help verifying your car? Have questions about vehicle verification? Reach out anytime.
         </p>
 
         <div className="space-y-6">
-          <div className="flex items-center gap-4 bg-green-50 p-4 rounded-lg hover:bg-green-100 transition">
+          {/* <div className="flex items-center gap-4 bg-green-50 p-4 rounded-lg hover:bg-green-100 transition">
             <FaWhatsapp className="text-green-500 w-6 h-6" />
             <a href="https://wa.me/2347084542979" target="_blank" rel="noopener noreferrer" className="text-green-700 font-medium">
               WhatsApp Us: +234 7085452979
             </a>
-          </div>
+          </div> */}
 
           {/* <div className="flex items-center gap-4 bg-green-50 p-4 rounded-lg hover:bg-green-100 transition">
             <FaPhoneAlt className="text-green-500 w-5 h-5" />
@@ -28,7 +28,12 @@ export default function ContactPage() {
 
           <div className="flex items-center gap-4 bg-green-50 p-4 rounded-lg hover:bg-green-100 transition">
             <FaEnvelope className="text-green-500 w-5 h-5" />
-            <span className="text-green-700 font-medium">Email: support@sellmycarnaija.com</span>
+            <span className="text-green-700 font-medium">Email: support@sellmycarnaijaverify.com</span>
+          </div>
+
+          <div className="flex items-center gap-4 bg-green-50 p-4 rounded-lg hover:bg-green-100 transition">
+            <FaEnvelope className="text-green-500 w-5 h-5" />
+            <span className="text-green-700 font-medium">Email: info@sellmycarnaijaverify.com</span>
           </div>
 
           <div className="flex items-center justify-center gap-6 mt-8">

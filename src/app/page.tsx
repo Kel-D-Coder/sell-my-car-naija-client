@@ -4,11 +4,11 @@ import checkmark from "../../assets/463030-middle-removebg-preview.png"
 
 export default function Home() {
   const services = [
-    { icon: <FaCar className="text-green-400 w-5 h-5" />, text: 'Basic VIN Check – Get key vehicle details in seconds' },
-    { icon: <FaClipboardList className="text-green-400 w-5 h-5" />, text: 'Premium VIN Check – Full history + accident records + auction photos' },
-    { icon: <FaMotorcycle className="text-green-400 w-5 h-5" />, text: 'Motorcycle VIN Decode – Instantly verify motorcycle details' },
-    { icon: <FaCheckCircle className="text-green-400 w-5 h-5" />, text: 'Plate Number Check – Retrieve info using just the registration plate' },
-    { icon: <FaMoneyBillWave className="text-green-400 w-5 h-5" />, text: 'Market Value Check – Know the true value before you pay, avoid overpaying' },
+    { icon: <FaCar className="text-green-400 w-5 h-5" />, text: 'Basic VIN Check – Get key vehicle details in seconds', link: '/verify/vin-check' },
+    { icon: <FaClipboardList className="text-green-400 w-5 h-5" />, text: 'Premium VIN Check – Full history + accident records + auction photos', link: '/verify/vehicle-history' },
+    { icon: <FaMotorcycle className="text-green-400 w-5 h-5" />, text: 'Motorcycle VIN Decode – Instantly verify motorcycle details', link: '/verify/motorcycle-check' },
+    { icon: <FaCheckCircle className="text-green-400 w-5 h-5" />, text: 'Plate Number Check – Retrieve info using just the registration plate', link: "/verify/plate-check" },
+    { icon: <FaMoneyBillWave className="text-green-400 w-5 h-5" />, text: 'Market Value Check – Know the true value before you pay, avoid overpaying', link: "/verify/market-value" },
   ];
 
   return (
@@ -44,8 +44,7 @@ export default function Home() {
 
         {/* What Makes Us Different Section */}
         <div className="mt-16 text-gray-800 rounded-lg shadow-md px-6 py-8 max-w-2xl mx-auto text-center" style={{ backgroundColor: "#FDFCFB"}}>
-            <h2 className="text-xl sm:text-2xl font-bold text-green-700 mb-4 flex items-center justify-center">
-              <img src={checkmark.src} alt="" className='h-7' />
+            <h2 className="text-xl sm:text-2xl font-bold text-green-700 mb-4">
               &quot;What Makes Us Different&quot;
             </h2>
           <p className="text-sm sm:text-base font-medium leading-relaxed text-gray-600">
@@ -65,8 +64,9 @@ export default function Home() {
 
       {/* Services / Benefits */}
       <div className="mt-12 max-w-2xl mx-auto">
-        <h2 className="text-lg font-bold text-green-400 uppercase tracking-wide mb-4 text-center">
-         <span className='rounded-full border text-center px-0.5 pb-0.5'>✔️</span> Vehicle Check Services
+        <h2 className="text-lg font-bold text-green-400 uppercase tracking-wide mb-4 text-center flex items-center justify-center">
+          <img src={checkmark.src} alt="" className='h-7' />
+          Vehicle Check Services
         </h2>
 
         <div className="space-y-4">
@@ -76,7 +76,7 @@ export default function Home() {
               className="flex items-start gap-3 bg-white/10 rounded-md p-4 border border-white/20 hover:border-green-400 transition text-sm font-semibold sm:text-base"
             >
               {item.icon}
-              <span>{item.text}</span>
+              <Link href={item.link}>{item.text}</Link>
             </div>
           ))}
       </div>
