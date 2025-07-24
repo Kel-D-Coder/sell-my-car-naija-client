@@ -10,7 +10,7 @@ export default function Navbar() {
   const handleLinkClick = () => setOpen(false);
 
   return (
-    <nav className="w-full bg-white shadow-md left-0 z-50 relative">
+    <nav className="w-full shadow-md left-0 z-50 relative" style={{ backgroundColor: '#FDFCFB'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0 flex items-center">

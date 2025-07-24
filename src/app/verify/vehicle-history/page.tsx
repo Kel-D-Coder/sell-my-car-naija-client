@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-export default function MotorcycleVinCheckPage() {
+export default function VehicleHistoryPage() {
   const [vin, setVin] = useState('');
   const [result, setResult] = useState<any>(null);
   const [loading, setLoading] = useState(false);
@@ -15,20 +15,18 @@ export default function MotorcycleVinCheckPage() {
     setResult(null);
 
     try {
-      const res = await axios.post(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/verification/motorcycle-check`,
-        { vin }
-      );
+        const res = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/verification/vehicle-history`, { vin });
 
-      const data = await res.data;
+        const data = await res.data;
 
-      if (res.status === 200) {
+      if (res.status == 200) {
         setResult(data);
       } else {
-        setError(data.msg || 'Motorcycle details not found.');
+        setError(data.msg || 'Vehicle history not found.');
       }
     } catch (err: any) {
       setError(err.response?.data?.error || 'Something went wrong');
+      console.error(err.message);
     }
 
     setLoading(false);
@@ -37,12 +35,12 @@ export default function MotorcycleVinCheckPage() {
   return (
     <div className="min-h-screen bg-gray-100 px-4 py-12">
       <div className="max-w-2xl mx-auto bg-white shadow-md rounded-lg p-8">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6">Motorcycle VIN Check</h2>
+        <h2 className="text-2xl font-bold text-gray-800 mb-6">Vehicle History Report</h2>
 
         <div className="space-y-4">
           <input
             type="text"
-            placeholder="Enter Motorcycle VIN"
+            placeholder="Enter VIN (e.g. 1HGCM82633A123456)"
             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"
             value={vin}
             onChange={(e) => setVin(e.target.value.toUpperCase())}
@@ -53,7 +51,7 @@ export default function MotorcycleVinCheckPage() {
             disabled={loading || !vin.trim()}
             className="w-full bg-green-700 text-white py-3 rounded-md font-medium hover:bg-green-800 disabled:opacity-50"
           >
-            {loading ? 'Fetching Details...' : 'Check Motorcycle'}
+            {loading ? 'Fetching history...' : 'Check History'}
           </button>
         </div>
 
@@ -63,25 +61,12 @@ export default function MotorcycleVinCheckPage() {
           </div>
         )}
 
-        {result?.data && (
-          <div className="mt-8 bg-gray-50 border border-gray-200 rounded p-4 text-sm text-gray-800 space-y-2">
-            <p><strong>Year:</strong> {result.data.year || 'N/A'}</p>
-            <p><strong>Make:</strong> {result.data.make || 'N/A'}</p>
-            <p><strong>Model:</strong> {result.data.model || 'N/A'}</p>
-            <p><strong>Trim:</strong> {result.data.trim || 'N/A'}</p>
-            <p><strong>Category:</strong> {result.data.vehicle?.category || 'N/A'}</p>
-            <p><strong>Price (USD):</strong> {result.data.price?.base_msrp ? `$${result.data.price.base_msrp}` : 'N/A'}</p>
-
-            <div className="mt-4">
-              <strong>Dimensions:</strong>
-              <ul className="list-disc pl-5 mt-2">
-                {result.data.dimensions?.map((dim: any, i: number) => (
-                  <li key={i}>
-                    <strong>{dim.name}:</strong> {dim.measurements?.[0]?.value} {dim.measurements?.[0]?.unit}
-                  </li>
-                ))}
-              </ul>
-            </div>
+        {result?.data?.html && (
+          <div className="mt-8 bg-gray-50 border border-gray-200 rounded p-4 overflow-x-auto">
+            <div
+              className="prose prose-sm max-w-none text-sm text-gray-800"
+              dangerouslySetInnerHTML={{ __html: result.data.html }}
+            />
           </div>
         )}
       </div>
