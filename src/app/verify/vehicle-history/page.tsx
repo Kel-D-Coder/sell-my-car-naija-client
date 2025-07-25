@@ -35,7 +35,7 @@ export default function VehicleHistoryPage() {
   return (
     <div className="min-h-screen bg-gray-100 px-4 py-12">
       <div className="max-w-2xl mx-auto bg-white shadow-md rounded-lg p-8">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6">Vehicle History Report</h2>
+        <h2 className="text-2xl font-bold text-gray-800 mb-6">Premium VIN Check Report</h2>
 
         <div className="space-y-4">
           <input
